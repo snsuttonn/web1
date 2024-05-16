@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Sutton</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+      body {
+        background-color: #121321;
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+      }
+
+      /* Ajustes adicionales */
+      .text-custom-blue {
+        color: #7b82fe;
+      }
+
+      @media screen and (max-width: 768px) {
+        /* Ajustes para pantallas más pequeñas */
+        .text-6xl {
+          font-size: 3rem;
+        }
+        .text-3xl {
+          font-size: 1.5rem;
+        }
+        /* Agregar más ajustes según sea necesario */
+      }
+      
+      .nav-link:hover {
+      filter: brightness(90%);
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="p-6" style="color: #121321;">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-white font-bold text-2xl">Sutton</div>
+        
+        <!-- Ícono de hamburguesa para dispositivos móviles -->
+        <div class="block lg:hidden">
+          <button id="btnToggle" class="text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Enlaces del Navbar -->
+        <div class="hidden lg:flex space-x-4">
+          <a href="#home" class="text-white nav-link transition duration-300">home</a>
+          <a href="#about-me" class="text-white nav-link transition duration-300">about me</a>
+          <a href="#projects" class="text-white nav-link transition duration-300">projects</a>
+          <a href="#contact" class="text-white nav-link transition duration-300">contacts</a>
+        </div>
+      </div>
+      
+      <!-- Menú desplegable para dispositivos móviles -->
+      <div id="menuMobile" class="hidden lg:hidden mt-4">
+        <a href="#home" class="block text-white py-2 transition duration-300">home</a>
+        <a href="#about-me" class="block text-white py-2 transition duration-300">about me</a>
+        <a href="#projects" class="block text-white py-2 transition duration-300">projects</a>
+        <a href="#contact" class="block text-white py-2 transition duration-300">contact</a>
+      </div>
+    </nav>
+
+<!-- Home Section -->
+<section id="home" class="flex flex-col md:flex-row justify-between p-6 md-12">
+    <div class="w-full md:w-1/2 flex flex-col items-start space-y-3 md:pr-12">
+        <div class="flex space-x-1 mb-1">
+            <div class="text-white py-2 px-4 rounded-full border border-gray-800">HTML</div>
+            <div class="text-white py-2 px-4 rounded-full border border-gray-800">CSS</div>
+            <div class="text-white py-2 px-4 rounded-full border border-gray-800">SQL</div>
+            <div class="text-white py-2 px-4 rounded-full border border-gray-800">PYTHON</div>
+        </div>
+        <h1 class="text-6xl font-bold">Hello, I'm</h1>
+        <h1 class="text-6xl font-bold" style="color: #7D9CFF;">Sutton</h1>
+        <p class="text-lg">Data Scientist, AI Developer, Web Programmer, Mechatronics, Computer Scientist</p>
+        <div class="flex space-x-4">
+            <button class="bg-custom-blue text-black py-2 px-4 rounded-lg hover:bg-custom-blue-dark transition duration-300">About Me</button>
+            <button class="text-white py-2 px-4 rounded-lg hover:bg-gray-800 border border-gray-800 transition duration-300">Download CV</button>
+        </div>
+
+    </div>
+    <div class="w-full md:w-1/2 flex mt-6 md:mt-0">
+        <!-- Chatbot Container -->
+        <div id="chat-container" class="bg-gray-900 p-4 rounded-md shadow-md w-full h-96 flex items-center justify-center text-white">
+            <!-- Chatbot functionality coming soon -->
+            <p class="text-gray-400">Chatbot coming soon...</p>
+        </div>
+    </div>
+</section>
+
+<div class="bg-gray-900 text-white p-6 rounded-md w-full">
+    <div class="text-gray-400">info@example.com</div>
+</div>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="p-6 md:p-12">
+        <h2 class="py-16  pb-2 text-4xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+            Soy Sutton, un profesional apasionado por la ciencia de datos, el desarrollo de IA, 
+            la programación web, la mecatrónica y la computación. Tengo una sólida formación 
+            académica y experiencia práctica en proyectos desafiantes. Me encanta resolver 
+            problemas complejos y aprender nuevas tecnologías.</h2>
+        <div class="flex space-x-8 mt-6">
+            <div class="p-4 rounded shadow-md hover:shadow-lg transition duration-300">
+                <h3 class="text-6xl font-bold" style="color: #7D9CFF;">3+</h3>
+                <p>Years of experience</p>
+            </div>
+            <div class="p-4 rounded shadow-md hover:shadow-lg transition duration-300">
+                <h3 class="text-6xl font-bold" style="color: #7D9CFF;">5+</h3>
+                <p>Technologies mastered</p>
+            </div>
+            <div class="p-4 rounded shadow-md hover:shadow-lg transition duration-300">
+                <h3 class="text-6xl font-bold" style="color: #7D9CFF;">15+</h3>
+                <p>Projects worked</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="p-6">
+    <h2 class="text-sm font-bold mb-2" style="color: #7CA5FE">Projects</h2>
+    <h1 class="text-6xl font-bold mb-2">Streamlined digital experiences.</h1>
+    <p class="text-gray-400 mb-5">I've worked on a variety of projects, from small websites to large-scale web applications. Here are some of my favorites:</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Example Project Card -->
+        <div class="relative">
+            <a href="https://www.youtube.com">
+                <img src="proyect1.png" alt="Project 1" class="rounded-lg">
+                <div class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 p-4 rounded-b">
+                    <p class="text-gray-400">Descripción breve del proyecto 1.</p>
+                </div>
+            </a>
+        </div>        
+        <div class="relative">
+            <a href="https://www.youtube.com">
+                <img src="proyect1.png" alt="Project 2" class="rounded-lg">
+                <div class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 p-4 rounded-b">
+                    <p class="text-gray-400">Descripción breve del proyecto 2.</p>
+                </div>
+            </a>
+        </div>  
+        <div class="relative">
+            <a href="https://www.youtube.com">
+                <img src="proyect1.png" alt="Project 3" class="rounded-lg">
+                <div class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 p-4 rounded-b">
+                    <p class="text-gray-400">Descripción breve del proyecto 3.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="p-6">
+    <div class="bg-gray-900 p-8 rounded-md text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Let's Work <span style="color:#7CA1FE;">Together</span></h2>
+        <p class="text-gray-300 mb-6">I'm currently available for freelance work and open to discussing new projects.</p>
+        <button class="bg-custom-blue text-black py-2 px-4 rounded-lg hover:bg-custom-blue-dark transition duration-300">About Me</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="flex justify-between p-4 text-xs text-gray-400">
+    <div>
+        <span class="text-gray-400">Made by </span>
+        <a href="https://tu-enlace.com" class="hover:text-gray-300 transition-colors">Sutton</a>
+    </div>
+    <div>info@example.com</div>
+</footer>
+
+<style>
+    .bg-custom-blue {
+     background-color: #7B82FE;
+    }
+    .hover\:bg-custom-blue-dark:hover {
+        background-color: #6c73f2;
+    }
+</style>
+
+<script>
+  document.getElementById('btnToggle').addEventListener('click', function() {
+    var menu = document.getElementById('menuMobile');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  });
+</script>
